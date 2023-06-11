@@ -77,6 +77,3 @@ with st.expander("Theme Explorer Table",expanded=True):
         df_table_sets = df_table_sets[df_table_sets.parent_theme_name == chosen_theme]
         #👇 Use a plotly widget from Streamlit to output an interactive table with df_table_sets. Pass the parameter use_container_width =True to ensure the visualization expands to the container width.
         st.dataframe(data=df_table_sets, use_container_width=True)
-
-        #👇 Use a plotly widget from Streamlit to output an interactive table with df_table_sets. Pass the parameter use_container_width =True to ensure the visualization expands to the container width.
-        st.plotly_chart(px.table(df_table_sets), use_container_width=True)
